@@ -11,6 +11,6 @@ Foursquare venues API
 # Third-party resources I made use of to complete this project.
 Udacity courses  
 https://stackoverflow.com/questions/47522033/getting-json-out-of-jquery-from-foursquare-api
-https://developers.google.com/maps/documentation/
-https://developer.foursquare.com/
-http://learn.knockoutjs.com/
+https://developers.google.com/maps/documentation
+https://developer.foursquare.com
+http://learn.knockoutjs.com
