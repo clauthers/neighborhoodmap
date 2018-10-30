@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Neighborhood Map</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="options-box" id="navbarToggleExternalContent">
+                <h1>Find A New NYC Home</h1>
+                  <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon transparent"><span class="glyphicon glyphicon-filter"></span></span>
+                        <input class="form-control" type="search" placeholder="Filter Homes"
+                            data-bind="textInput: currentFilter" autocomplete="off"/>
+                    </div>
+                </div>
+                <div class="list-group" data-bind="foreach: places">
+                    <a href="#" class="list-group-item" data-bind="text: title, click: showPlace"></a>
+                </div>
+              </div>
+            </div>
+            <div class="map-container col-xs-12 col-md-8">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Bootstrap JS, then Knockout JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <!-- lastly load Google Maps -->
+    <script async defer
+        src=
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyAR9IRiGr9kBJg4vxx0-BnryO_4sa7lve8&v=3&callback=initApp" onerror="googleError()">
+    </script>
+  </body>
+</html>
